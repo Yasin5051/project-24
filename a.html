@@ -1,0 +1,42 @@
+<html>
+
+<body>
+    <script>
+        //object : datatype
+        //number, string : only 1 data
+        //object : group many data (property) : property name, value
+        var x = 40;//number
+        var student = { Rno: 12, age: 15, score: 56 };
+        document.write("Roll Number : " + student['Rno'] + "<br>");
+        document.write("Age: " + student.age + "<br>");
+        document.write("Score : " + student.score + "<br>");
+
+
+        function f1() {
+            document.write("Hello<br>");
+        }
+        f1()
+
+        function f2(a, b) {//a=3, b=8
+            var c = a + b;//3+8=11
+            document.write(c + "<br>");
+        }
+        f2(3, 8);
+        document.write("****************<br>");
+        var sum = 0;
+        function f3() {
+            var i;
+            for (i = 0; i < arguments.length; i += 1) {
+                document.write(arguments[i] + "<br>");
+                sum = sum + arguments[i];
+            }
+        }
+
+        f3(6, 11, 9, 0, 3);
+        document.write(sum);
+        //index :position : 0,1,2,3,4 : length - 5, 0 to <length
+
+    </script>
+</body>
+
+</html>
